@@ -1,8 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import FlashcardList from './FlashcardList';
 
 function App() {
+
+  const [ flashCards, setFlashCards ] = useState([])
   return (
+    <FlashcardList flashCards={flashCards}/>
   )
 }
 
